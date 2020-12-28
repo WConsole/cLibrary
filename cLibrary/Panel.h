@@ -11,7 +11,7 @@ namespace cLibrary
 
 		Panel(cLibrary::Vector2D^ Size, cLibrary::Vector2D^ Location, cLibrary::Window^ Window)
 		{
-			Windows::Forms::ListBox^ p = gcnew Windows::Forms::ListBox();
+			Windows::Forms::Panel^ p = gcnew Windows::Forms::Panel();
 			p->Location = Drawing::Point(Location->X, Location->Y);
 			p->Size = Drawing::Size(Size->X, Size->Y);
 

@@ -10,10 +10,6 @@ namespace cLibrary
 {
 	public ref class Window : Standarts
 	{
-		void StartForm()
-		{
-			reinterpret_cast<Windows::Forms::Form^>(Window::Control)->ShowDialog();
-		}
 
 	public:
 		Window(String^ Title, cLibrary::Vector2D^ Size)
@@ -25,6 +21,8 @@ namespace cLibrary
 			Window::Control = Form; 
 			Window::Size = Size;
 			Window::Location = gcnew cLibrary::Vector2D(Form->Location.X, Form->Location.Y);
+
+			Form->ShowDialog();
 		}
 		Window(String^ Title, cLibrary::Vector2D^ Size, cLibrary::Vector2D^ Location)
 		{
@@ -36,12 +34,6 @@ namespace cLibrary
 			Window::Control = Form;
 			Window::Size = Size;
 			Window::Location = Location;
-		}
-
-		void Show()
-		{
-			Thread^ t1 = gcnew Thread(gcnew ThreadStart(this, &Window::StartForm));
-			t1->Start();
 		}
 
 		void BorderNone()
