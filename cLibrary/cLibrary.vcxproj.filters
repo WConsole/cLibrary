@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Teile">
+      <UniqueIdentifier>{b296ddee-5913-46f7-a495-73f3ede57ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Form">
+      <UniqueIdentifier>{b85698a5-0496-4820-a0d5-135729e6b533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Standart">
+      <UniqueIdentifier>{1eac0bb7-c928-4eb1-b0a0-d5dbde508e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\cLibrary">
+      <UniqueIdentifier>{d692d008-4740-4a7d-aaaa-cc9e22f9997c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cLibrary.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Headerdateien\Teile</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBox.h">
+      <Filter>Headerdateien\Teile</Filter>
+    </ClInclude>
+    <ClInclude Include="Panel.h">
+      <Filter>Headerdateien\Teile</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBox.h">
+      <Filter>Headerdateien\Teile</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Headerdateien\Teile</Filter>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <Filter>Headerdateien\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="Standart.h">
+      <Filter>Headerdateien\Standart</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Headerdateien\cLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Headerdateien\cLibrary</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cLibrary.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>Headerdateien\Form</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
